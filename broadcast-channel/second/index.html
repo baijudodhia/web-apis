@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadcast Channel API - second.html</title>
+    <link rel="stylesheet" href="../_styles/global.css">
+</head>
+
+<body>
+    <main>
+        <p>second.html - connected with primary and secondary channel</p>
+        <input id="message" type="text" placeholder="Type message, click enter and then check other tabs for the message..." onkeydown="sendMessage(this);">
+        <div id="result"></div>
+    </main>
+
+    <script src="./second.js"></script>
+    <script src="../_scripts/broadcast-channel-primary.js"></script>
+    <script src="../_scripts/broadcast-channel-secondary.js"></script>
+</body>
+
+</html>
