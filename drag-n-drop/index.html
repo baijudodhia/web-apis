@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script type="text/javascript" src="./index.js"></script>
+  </head>
+  <body>
+    <div
+      id="dragbox1"
+      class="box"
+      draggable="true"
+      ondragstart="dragStart(event);"
+      ondragend="dragEnd(event);"
+    ></div>
+    <div
+      id="dragbox2"
+      class="box"
+      draggable="true"
+      ondragstart="dragStart(event);"
+      ondragend="dragEnd(event);"
+    ></div>
+    <div
+      id="dropbox1"
+      ondrop="drop(event);"
+      ondragover="dropOver(event);"
+    ></div>
+    <div
+      id="dropbox2"
+      ondrop="drop(event);"
+      ondragover="dropOver(event);"
+    ></div>
+  </body>
+</html>
