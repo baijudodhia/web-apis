@@ -12,12 +12,24 @@
 <body>
     <main>
         <p>index.html - connected with primary channel</p>
-        <input id="message" type="text" placeholder="Type message, click enter and then check other tabs for the message..." onkeydown="sendMessage(this);">
+        <input id="message" type="text"
+            placeholder="Type message, click enter and then check other tabs for the message..."
+            onkeydown="sendMessage(this);">
         <div id="result"></div>
     </main>
 
     <script src="./index.js"></script>
     <script src="./scripts/broadcast-channel-primary.js"></script>
+
+    <!-- Don't save the website state -->
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+
+    <!-- Analytics -->
+    <script async src="https://baijudodhia.github.io/assets/scripts/analytics.js"></script>
 </body>
 
 </html>
